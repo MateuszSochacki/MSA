@@ -143,7 +143,7 @@ public class StatusEntity {
     }
 
     @ManyToOne
-    @JoinColumn(name = "AMINO_idAMINO", referencedColumnName = "idAMINO", nullable = false)
+    @JoinColumn(name = "AMINO_idAMINO", referencedColumnName = "idAMINO", nullable = false, insertable= false, updatable = false)
     public AminoEntity getAminoByAminoIdAmino() {
         return aminoByAminoIdAmino;
     }
@@ -153,7 +153,7 @@ public class StatusEntity {
     }
 
     @ManyToOne
-    @JoinColumn(name = "PROFILE_idPROFILE", referencedColumnName = "idPROFILE", nullable = false)
+    @JoinColumn(name = "PROFILE_idPROFILE", referencedColumnName = "idPROFILE", nullable = false, insertable= false, updatable = false)
     public ProfileEntity getProfileByProfileIdProfile() {
         return profileByProfileIdProfile;
     }
